@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tourism WebSite</title>
+	<link rel="stylesheet" type="text/css" href="style1.css">
+    <style>
+        body{
+          background-color: aliceblue;
+        }
+         h1 {
+               text-align: center;
+               color: black;
+               font-size: 30px;
+         } 
+         h2 {
+                
+               text-align: center;
+               color: black;
+               font-size: 30px;
+               padding: 20px;
+         }
+
+         body {
+			font-family: 'Times New Roman', Times, serif, sans-serif;
+			margin: 0;
+			padding: 0;
+		}
+	header {
+		background-color: #008080;
+		color: rgb(255, 0, 153);
+		padding: 20px;
+		text-align: center;
+	}
+
+	table {
+		border: 2px solid black;
+		width: 100%;
+		margin-top: 20px;
+	}
+
+	table td, table th {
+		border: 2px solid black;
+		padding: 10px;
+		text-align: center;
+        font-size: 25px;
+	}
+
+	table th {
+		background-color: black;
+		color: whitesmoke;
+	}
+
+	form {
+        background-color: antiquewhite;
+		border: 2px slateblue;
+		width: 50%;
+		margin: 20px auto;
+		padding: 50px;
+	}
+
+	form input[type=text], form input[type=email], form textarea {
+		width: 100%;
+		padding: 12px;
+		border: 1px salmon;
+		border-radius: 4px;
+		resize: vertical;
+	}
+
+	form label {
+		display: block;
+		margin-bottom: 10px;
+		font-weight: bold;
+	}
+
+	form input[type=submit] {
+		background-color: blue;
+		color: white;
+		padding: 12px 20px;
+		border: none;
+		border-radius: 4px;
+		cursor: pointer;
+	}
+
+	form input[type=submit]:hover {
+		background-color: aqua;
+	}
+
+         </style>
+</head>
+<body>
+
+		<ul>
+			<li><a href="#main">Main</a></li>
+			<li><a href="#table">Table</a></li>
+			<li><a href="#form">Form</a></li>
+		</ul>
+	
+
+	<section id="main">
+		<h1>Welcome to Our Tourism Website</h1>
+		<h2>HELLO MALAYSIA!!! Browse our TOP vacation below:</h2>
+		<ul>
+			<li>Pulau Redang, Terengganu</li>
+            <body>
+                <img src="pulauredang.jpg" height="300" alt="This is a picture of Pulau Redang" title="Tagline:Na,Na,Na,Our Terengganu">
+            </body>
+			<li>Sunway Lagoon, Selangor</li>
+            <body>
+                <img src="sunway.jpg" height="340" alt="This is a picture of Sunway Lagoon" title="Tagline:Have fun dear!!!">
+            </body>
+			<li>KL Bird Park, Kuala Lumpur</li>
+            <body>
+                <img src="kuala-lumpur-bird-park_standard.jpg" height="305" alt="This is a picture of KL Bird Park" title="Tagline:Birds make you smile">
+            </body>
+			<li>Pulau Tioman, Johor</li>
+            <body>
+                <img src="pulautioman.jpg" height="305" alt="This is a picture of KL Bird Park" title="Tagline:The island view make you feel relieve">
+            </body>
+		</ul>
+		
+	</section>
+
+	<section id="table">
+		<h2>Travel Packages</h2>
+		<table>
+			<thead>
+				<tr>
+					<th>Destination</th>
+					<th>Price</th>
+					<th>Duration</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Pulau Redang, Terengganu</td>
+					<td>RM 250</td>
+					<td>2 days 1 night</td>
+				</tr>
+				<tr>
+					<td>Sunway Lagoon, Selangor</td>
+					<td>Adult (RM 220)
+                        Child (RM 185)
+                    </td>
+					<td>per entry</td>
+				</tr>
+				<tr>
+					<td>KL Bird Park, Kuala Lumpur</td>
+					<td>Adult (RM 75)
+                        Child (RM 50)
+                    </td>
+					<td>per entry</td>
+				</tr>
+				<tr>
+					<td>Pulau Tioman, Johor</td>
+					<td>RM 450</td>
+					<td>3 days 2 nights</td>
+				</tr>
+				
+			</tbody>
+		</table>
+	</section>
+
+	<section id="form">
+		<h2>Form</h2>
+		<form action="#" method="post">
+			<label for="name">Name:</label>
+			<input type="text" id="name" name="name" required>
+
+			<label for="email">Email:</label>
+			<input type="email" id="email" name="email" required>
+
+			<label for="destination">Destination:</label>
+			<select id="destination" name="destination" required>
+				<option value="">Select a destination</option>
+				<option value="paris">Pulau Redang, Terengganu</option>
+				<option value="tokyo">Sunway Lagoon, Selangor</option>
+				<option value="rio">KL Bird Park, Kuala Lumpur</option>
+				<option value="sydney">Pulau Tioman, Johor</option>
+			</select>
+
+			<label for="message">Message:</label>
+			<textarea id="message" name="message"></textarea>
+
+			<input type="submit" value="Submit">
+		</form>
+	</section>
+    
+</body>
+</html>
